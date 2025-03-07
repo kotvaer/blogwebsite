@@ -1,0 +1,34 @@
+.profile-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+/* 项目图片样式 */
+.project-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.project-card:nth-child(1) .project-image {
+    background-image: url('../images/project1.jpg');
+}
+
+.project-card:nth-child(2) .project-image {
+    background-image: url('../images/project2.jpg');
+} 

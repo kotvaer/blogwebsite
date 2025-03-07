@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术博客 | 分享与交流</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/transitions.css">
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+
+    <main>
+        <!-- 博客头部 -->
+        <section class="blog-header">
+            <div class="container">
+                <h1>技术博客</h1>
+                <p class="subtitle">分享技术见解，记录学习心得</p>
+            </div>
+        </section>
+
+        <!-- 博客内容 -->
+        <section class="blog-content">
+            <div class="container">
+                <div class="blog-layout">
+                    <!-- 文章列表 -->
+                    <div class="blog-main">
+                        <!-- 文章卡片 -->
+                        <article class="blog-card">
+                            <div class="blog-card-header">
+                                <span class="blog-category">前端开发</span>
+                                <time>2024-03-20</time>
+                            </div>
+                            <h2>React性能优化实践指南</h2>
+                            <p class="blog-excerpt">
+                                探讨React应用中常见的性能问题及其解决方案，包括组件优化、状态管理、渲染优化等多个方面...
+                            </p>
+                            <div class="blog-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">性能优化</span>
+                                <span class="tag">最佳实践</span>
+                            </div>
+                            <a href="#" class="read-more">阅读全文 →</a>
+                        </article>
+
+                        <article class="blog-card">
+                            <div class="blog-card-header">
+                                <span class="blog-category">后端开发</span>
+                                <time>2024-03-15</time>
+                            </div>
+                            <h2>Node.js微服务架构设计</h2>
+                            <p class="blog-excerpt">
+                                详细介绍如何使用Node.js构建可扩展的微服务架构，包括服务发现、负载均衡、错误处理等关键概念...
+                            </p>
+                            <div class="blog-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">微服务</span>
+                                <span class="tag">架构设计</span>
+                            </div>
+                            <a href="#" class="read-more">阅读全文 →</a>
+                        </article>
+
+                        <article class="blog-card">
+                            <div class="blog-card-header">
+                                <span class="blog-category">DevOps</span>
+                                <time>2024-03-10</time>
+                            </div>
+                            <h2>Docker容器化最佳实践</h2>
+                            <p class="blog-excerpt">
+                                分享在实际项目中使用Docker的经验，包括镜像优化、多阶段构建、安全性考虑等方面的最佳实践...
+                            </p>
+                            <div class="blog-tags">
+                                <span class="tag">Docker</span>
+                                <span class="tag">容器化</span>
+                                <span class="tag">CI/CD</span>
+                            </div>
+                            <a href="#" class="read-more">阅读全文 →</a>
+                        </article>
+                    </div>
+
+                    <!-- 侧边栏 -->
+                    <aside class="blog-sidebar">
+                        <!-- 分类 -->
+                        <div class="sidebar-widget">
+                            <h3>文章分类</h3>
+                            <ul class="category-list">
+                                <li><a href="#">前端开发 (12)</a></li>
+                                <li><a href="#">后端开发 (8)</a></li>
+                                <li><a href="#">DevOps (5)</a></li>
+                                <li><a href="#">架构设计 (7)</a></li>
+                                <li><a href="#">算法与数据结构 (4)</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 标签云 -->
+                        <div class="sidebar-widget">
+                            <h3>热门标签</h3>
+                            <div class="tag-cloud">
+                                <a href="#" class="tag">JavaScript</a>
+                                <a href="#" class="tag">React</a>
+                                <a href="#" class="tag">Node.js</a>
+                                <a href="#" class="tag">Docker</a>
+                                <a href="#" class="tag">Python</a>
+                                <a href="#" class="tag">微服务</a>
+                                <a href="#" class="tag">性能优化</a>
+                                <a href="#" class="tag">安全</a>
+                            </div>
+                        </div>
+
+                        <!-- 最近更新 -->
+                        <div class="sidebar-widget">
+                            <h3>最近更新</h3>
+                            <ul class="recent-posts">
+                                <li>
+                                    <a href="#">React性能优化实践指南</a>
+                                    <span class="post-date">2024-03-20</span>
+                                </li>
+                                <li>
+                                    <a href="#">Node.js微服务架构设计</a>
+                                    <span class="post-date">2024-03-15</span>
+                                </li>
+                                <li>
+                                    <a href="#">Docker容器化最佳实践</a>
+                                    <span class="post-date">2024-03-10</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/transitions.js"></script>
+    <script src="js/load-footer.js"></script>
+</body>
+</html> 

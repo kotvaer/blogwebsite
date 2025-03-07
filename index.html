@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站 | 专业作品集</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 全屏个人介绍部分 -->
+        <section class="hero">
+            <div class="container">
+                <div class="profile-image">
+                    <img src="public/images/profile.jpeg" alt="个人头像">
+                </div>
+                <h1>Kaze</h1>
+                <p class="subtitle">后端工程师 | 开源爱好者 | 业余摄影师</p>
+                <div class="cta-buttons">
+                    <a href="resume.html" class="btn primary">查看简历</a>
+                    <a href="projects.html" class="btn secondary">浏览项目</a>
+                </div>
+            </div>
+            <!-- 滚动提示 -->
+            <div class="scroll-indicator">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 精选项目部分 -->
+        <section class="content-section featured-projects">
+            <div class="container">
+                <h2>精选项目</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <div class="project-info">
+                            <h3>项目名称 1</h3>
+                            <p>项目简短描述，介绍主要功能和技术栈。</p>
+                            <div class="tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <a href="#" class="learn-more">了解更多 →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <div class="project-info">
+                            <h3>项目名称 2</h3>
+                            <p>项目简短描述，介绍主要功能和技术栈。</p>
+                            <div class="tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <a href="#" class="learn-more">了解更多 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技能部分 -->
+        <section class="content-section skills">
+            <div class="container">
+                <h2>技能专长</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>前端开发</h3>
+                        <div class="skill-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Vue</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>后端开发</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>开发工具</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系部分 -->
+        <section class="content-section contact">
+            <div class="container">
+                <h2>联系我</h2>
+                <p>如果您对我的工作感兴趣，欢迎随时联系！</p>
+                <a href="mailto:your.email@example.com" class="btn primary">发送邮件</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/transitions.js"></script>
+    <script src="js/load-footer.js"></script>
+</body>
+</html> 

@@ -1,0 +1,102 @@
+/* 页面过渡动画 */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 1;
+    will-change: transform, opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* 页面离开动画 */
+.page-exit {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+}
+
+/* 导航链接过渡效果 */
+.nav-links a {
+    position: relative;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: color;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: var(--primary-color);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: width, left;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* 激活状态的链接效果 */
+.nav-links a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+/* 内容元素的渐进式显示 */
+.hero, .featured-projects, .skills, .contact,
+.resume-header, .experience, .education, .certifications,
+.projects, .blog-header, .blog-content {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+    animation: contentFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    will-change: transform, opacity;
+}
+
+@keyframes contentFadeIn {
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* 为不同区块设置不同的动画延迟 */
+.hero { animation-delay: 0.1s; }
+.featured-projects { animation-delay: 0.2s; }
+.skills { animation-delay: 0.3s; }
+.contact { animation-delay: 0.4s; }
+
+/* 确保页脚始终平滑过渡 */
+footer {
+    opacity: 0;
+    animation: footerFadeIn 0.5s ease-out 0.6s forwards;
+}
+
+@keyframes footerFadeIn {
+    to {
+        opacity: 1;
+    }
+} 

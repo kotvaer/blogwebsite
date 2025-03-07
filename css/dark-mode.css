@@ -1,0 +1,92 @@
+/* 暗色主题变量 */
+[data-theme="dark"] {
+    --primary-color: #60a5fa;
+    --secondary-color: #9ca3af;
+    --background-color: #111827;
+    --text-color: #f3f4f6;
+    --border-color: #374151;
+    --card-background: #1f2937;
+    --tag-background: #374151;
+}
+
+/* 主题切换按钮 */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 1rem;
+    border-radius: 50%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-toggle img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* 亮色主题下显示月亮图标 */
+[data-theme="light"] .dark-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+[data-theme="light"] .light-icon {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+/* 暗色主题下显示太阳图标 */
+[data-theme="dark"] .light-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+[data-theme="dark"] .dark-icon {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+/* 暗色主题下的图标颜色 */
+[data-theme="dark"] .theme-toggle img {
+    filter: invert(1);
+}
+
+/* 暗色主题下的特殊样式调整 */
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .skill-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] .tag {
+    background-color: var(--tag-background);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .contact {
+    background-color: var(--card-background);
+}
+
+[data-theme="dark"] .placeholder {
+    background-color: var(--tag-background);
+    color: var(--text-color);
+} 
