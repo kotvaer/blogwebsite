@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     try {
         // 获取导航栏HTML
-        const response = await fetch('/components/navbar.html');
+        const response = await fetch('./components/navbar.html');
         const html = await response.text();
         
         // 插入导航栏
