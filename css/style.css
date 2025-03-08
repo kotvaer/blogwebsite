@@ -98,11 +98,6 @@ body {
     justify-content: space-between; /*  两端对齐的关键  */
 }
 
-/* Add this rule to remove padding from .container inside .navbar */
-.navbar .container {
-    padding-left: 0;
-    padding-right: 0;
-}
 
 
 .nav-left {
