@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 如果找到页脚容器
     if (footerContainer) {
         // 使用fetch加载页脚组件
-        fetch('./components/footer.html')
+        fetch('../components/footer.html')
             .then(response => response.text())
             .then(html => {
                 footerContainer.innerHTML = html;
